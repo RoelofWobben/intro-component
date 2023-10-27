@@ -32,17 +32,26 @@
                 <span class="bold">Try it free 7 days then $20/mo. thereafter
             </div>
             <form method="post">
-                <input type="text" placeholder="First Name"  required>
-                <input type="text" placeholder="Last Name" required >
+                
+                <input type="text" placeholder="First Name" class="fname">
+                <img src="./images/icon-error.svg" class="icon_error">
+                <p class="error">First name cannot be empty</p>
+                
+                <input type="text" placeholder="Last Name" class="lname">
+                <img src="./images/icon-error.svg" class="icon_error">
+                <p class="error">Last name cannot be empty</p>
+
+
                 <input type="email" placeholder="Email Adress" >
                 <input type="password" placeholder="Password" required>
-                <button> CLAIM YOUR FREE TRAIL</button>
-                <p>
+                <button class="btn"> CLAIM YOUR FREE TRAIL</button>
+                <p class="confimation">
                     By clicking the button, you are agreeing to our <span class="red">Terms and Services </span>
                 </p>
             </form>
         </div>
     </div>
+    <script src="./roelof.js"></script>
 </body>
 </html>
 

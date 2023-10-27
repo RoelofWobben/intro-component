@@ -50,7 +50,9 @@ form {
     padding-left: 20px; 
     padding-top: 20px; 
     border-radius: 10px;
-    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688)       
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    position: relative; 
+       
          
 }
 
@@ -75,7 +77,7 @@ input {
     padding-left: 10px;
     border: 1px solid var(--grayish-blue);
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 input::placeholder {
@@ -104,6 +106,21 @@ p {
 .red {
     color: var(--red);
     font-weight: 700;  
+}
+
+.error {
+    font-size: 14px;
+    color: var(--red);
+    text-align: right;
+    padding-right: 35px;
+    visibility: hidden;
+}
+
+.icon_error {
+    position: absolute ; 
+    right: 80px;
+    top: 35px;
+    visibility: hidden;  
 }
 
 @media screen and (min-width: 800px) {
@@ -147,7 +164,7 @@ p {
           
     }
 
-    .right p {
+    .confimation {
         color: var(--grayish-blue);
         width:750px; 
         display: inline-block;
