@@ -3,7 +3,7 @@
     --green: hsl(154, 59%, 51%); 
     --blue: hsl(248, 32%, 49%); 
     --dark-blue: hsl(249, 10%, 26%);  
-    --grayish-blue: hsl(246, 25%, 77%)
+    --grayish-blue: hsl(246, 25%, 77%);
 }
 
 * {
@@ -16,20 +16,23 @@ body {
     font-family: 'Poppins', sans-serif;
     height: 100vh; 
     font-size: 16px;
-    width: 375px;
-    background: url('./images/bg-intro-mobile.png'), var(--red);   
+    background: url('./images/bg-intro-mobile.png'), var(--red);
+    display: flex; 
+    justify-content: center;    
 }
 
 .container {
-    margin-top: 90px;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
-    color: white; 
+    color: white;
+    width: 375px;  
 }
 
 h1 {
     text-align : center;
     margin-bottom: 20px;
+    
 }
 
 p {
@@ -39,11 +42,127 @@ p {
     font-weight: 500;    
 }
 
+form {
+    background: white;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    margin-left: 30px;
+    margin-right: 30px; 
+    padding-left: 20px; 
+    padding-top: 20px; 
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688)       
+         
+}
+
+button {
+    background-color: var(--green);
+    color: white; 
+    border: 0;
+    width: 280px;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    border-radius: 10px;    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    width: 280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+input::placeholder {
+    color: var(--dark-blue);
+    font-weight: 700;  
+}
+
+p {
+    margin-top: 10px;
+    padding-bottom: 20px;  
+    color: var(--grayish-blue);
+    font-size: 11px;  
+}
+
 .info {
     background-color: var(--blue);
     margin-right: 30px;
     margin-left: 30px;
     margin-top: 50px;
+    margin-bottom: 30px; 
     padding: 20px 50px;
-    border-radius: 10px;       
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688)       
+}
+
+.red {
+    color: var(--red);
+    font-weight: 700;  
+}
+
+@media screen and (min-width: 800px) {
+
+    body {
+        background: url('./images/bg-intro-desktop.png'), var(--red);
+    }
+
+    h1 {
+        font-size: 42px;
+        text-align : left;  
+    }
+
+    p {
+        color: white;
+        padding-right: 150px;
+        padding-left: 0; 
+        text-align: left;
+        font-size: 15px; 
+    }
+
+    .container {
+        flex-direction: row;
+        width: 90%;
+         
+    }
+
+    button {
+        width: 95%; 
+    }
+
+    .left {
+        display: flex; 
+        flex-direction: column;
+        padding-top: 150px;
+        width: 100%
+    }
+
+    .right {
+        width: 100%;
+          
+    }
+
+    .right p {
+        color: var(--grayish-blue);
+        width:750px; 
+        display: inline-block;
+        padding-left: 50px
+            
+    }
+
+    .red {
+        display: inline-block; 
+    }
+
+    input {
+        width: 95%;
+        padding-left: 30px; 
+        padding-right: 80px;  
+    }
+    
 }
