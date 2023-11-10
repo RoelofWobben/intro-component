@@ -117,9 +117,9 @@ p {
 }
 
 .icon_error {
-    position: absolute ; 
+    position: relative ; 
     right: 80px;
-    top: 35px;
+    top: 7px;
     visibility: hidden;  
 }
 
