@@ -51,9 +51,7 @@ form {
     padding-top: 20px; 
     border-radius: 10px;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
-    position: relative; 
-       
-         
+    position: relative;   
 }
 
 button {
@@ -117,10 +115,17 @@ p {
 }
 
 .icon_error {
-    position: relative ; 
-    right: 80px;
-    top: 7px;
+    position: absolute ; 
+    right: 30px;
+    top: 15px;
     visibility: hidden;  
+}
+
+.firstname, 
+.lastname, 
+.email,
+.password {
+    position: relative; 
 }
 
 @media screen and (min-width: 800px) {
@@ -180,6 +185,13 @@ p {
         width: 95%;
         padding-left: 30px; 
         padding-right: 80px;  
+    }
+
+    .icon_error {
+        position: absolute ; 
+        right: 50px;
+        top: 15px;
+        visibility: hidden;  
     }
     
 }
